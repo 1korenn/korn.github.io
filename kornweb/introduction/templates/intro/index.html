@@ -1,87 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
-        /* Add some basic styling to our slideshow */
-        .slideshow {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        .slideshow img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            transition: opacity 0.5s;
-        }
-        
-        .slideshow img.active {
-            opacity: 1;
-        }
-        
-        .slideshow img:not(.active) {
-            opacity: 0;
-        }
-        
-        /* Add some styling to our buttons */
-        .buttons {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            justify-content: space-between;
-            width: 80%;
-        }
-        
-        .buttons button {
-            font-size: 24px;
-            padding: 20px 40px;
-            border: none;
-            border-radius: 50%;
-            background-color: #fff;
-            color: #333;
-            cursor: pointer;
-        }
-        
-        .buttons button:hover {
-            background-color: #ccc;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static "intro/style.css" %}">
+   
 </head>
 <body>
     <header>
         <h1>Welcome to our Homepage</h1>
     </header>
-    <div class="slideshow">
-        <img src="image3.jpg" class="active">
-        <img src="image2.jpg">
-        <img src="image1.jpg">
-    </div>
+
     <div class="buttons">
         <button onclick="location.href='measurer'">Go to Measurer</button>
         <button>Button 2</button>
         <button>Button 3</button>
     </div>
-    
-    <script>
-        // Add some JavaScript to create a slideshow effect
-        let slideshowImages = document.querySelectorAll('.slideshow img');
-        let currentImage = 0;
 
-        setInterval(() => {
-            slideshowImages[currentImage].classList.toggle('active');
-            currentImage = (currentImage + 1) % slideshowImages.length;
-        }, 3000);
-    </script>
 </body>
 </html>

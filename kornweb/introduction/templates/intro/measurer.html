@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
-    <title> Hello</title>
-    <body>
-        <form>
-            <input type="text" id="input-field" placeholder="Enter your input">
-            <button type="submit">Submit</button>
-          </form>
+
+{% extends "intro/layout.html" %}
+
+
+{% block body%}
+    <form>
+        <input type="text" id="input-field" placeholder="Enter your input">
+        <button type="submit">Submit</button>
+        </form>
       
-    </body>
+    
     <script>
         const inputField = document.getElementById('input-field');
         const submitButton = document.querySelector('button[type="submit"]');
@@ -27,5 +21,5 @@
         window.location.href = redirectUrl;
         });
     </script>
-</body>
-</html>
+
+    {% endblock %}

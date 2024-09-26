@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <title> Hello</title>
-    <body>
-              <h1>measuring {{ name }}...please wait</h1>
-      
-    </body>
-</body>
-</html>
+{% extends "intro/layout.html" %}
+    
+    {% block body%}
+
+    <h1 class="measured">measuring {{ name }}...please wait</h1>
+
+    {% endblock %}

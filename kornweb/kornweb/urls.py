@@ -23,4 +23,5 @@ urlpatterns = [
     path("introduction/", include("introduction.urls")),
     path("mybday/", include("mybday.urls")),
     path("task/", include("task.urls"))
+    
 ]
