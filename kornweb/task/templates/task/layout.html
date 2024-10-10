@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href= "{% static 'task/layout.css' %}">
+    
+</head>
+<body>
+    <header>
+        <h1>korenaa  koren koren </h1>
+    </header>
+    {% block body%}
+
+
+    {% endblock %}
+   
+    <a href="{% url 'task:add'%}">go to add task</a>
+   <a href="{% url 'task:index'%}">go to task list</a>
+
+</body>
+</html>

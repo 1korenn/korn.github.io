@@ -1,0 +1,24 @@
+  /* Add some styling to our buttons */
+  .buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.buttons button {
+    font-size: 24px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #ccc;
+}

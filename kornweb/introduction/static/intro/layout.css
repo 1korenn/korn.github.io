@@ -1,0 +1,30 @@
+    * {
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 50px;
+          
+    }
+    .measured {
+        border: 1px solid grey;
+        padding: 20px;
+        border-radius: 3px;
+        width: 400px;
+    }
+
+    header {
+        border-color: black;
+        border-bottom: 3px;
+        border-style: solid;
+        border-left: 0;
+        border-top: 0;
+    }
+
+    input {
+        background-color: aqua;
+
+    }
+
+

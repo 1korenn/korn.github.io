@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BDAY?</title>
+    <link rel="stylesheet" href="{% static "bday/style.css" %}">
+  
+</head>
+    <body>
+        {% if mybday %}
+            <h1 class="rainbow-letters">Happy Birthday to me!</h1>
+        {% else %}
+            <h1 class="rainbow-letters">Days until my birthday: {{ days_until_birthday }}</h1>
+        {% endif %}
+    </body>
+</html>
